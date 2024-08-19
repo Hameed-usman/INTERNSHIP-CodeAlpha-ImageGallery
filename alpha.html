@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="./alpha.css">
+</head>
+<body>
+
+    <div class="full-img" id="fullImgBox">
+        
+
+        <img src="./Logo-CodeAlpha.png" id="fullImg">
+        <div id="imageHeading" class="image-heading">CodeAlpha Internship Task-01</div>
+        <span onclick="closefullImg()">X</span>
+    </div>
+    
+    <div class="full-cover">
+        <img src="./Logo-CodeAlpha.png" style="height: 45px; width: 75px; margin-left: 30px; margin-top: 40px;" onclick="openfullImg('./Logo-CodeAlpha.png', 'Logo CodeAlpha')">
+    
+        <div class="images">
+            <div class="image-container">
+                <img src="./Islamabad-01" style="height: 180px; width: 260px;" onclick="openfullImg('./Islamabad-01', 'Islamabad')">
+                <div class="overlay-text">Islamabad</div>
+                <a href="https://en.wikipedia.org/wiki/Islamabad" target="_blank" class="visit-button">Visit</a>
+            </div>
+            <div class="image-container">
+                <img src="./Karachi-01.jpg" style="height: 180px; width: 260px;" onclick="openfullImg('./Karachi-01.jpg', 'Karachi')">
+                <div class="overlay-text">Karachi</div>
+                <a href="https://en.wikipedia.org/wiki/Karachi" target="_blank" class="visit-button">Visit</a>
+            </div>
+            <div class="image-container">
+                <img src="./Peshawar01.jpg" style="height: 180px; width: 260px;" onclick="openfullImg('./Peshawar01.jpg', 'Peshawar')">
+                <div class="overlay-text">Peshawar</div>
+                <a href="https://en.wikipedia.org/wiki/Peshawar" target="_blank" class="visit-button">Visit</a>
+            </div>
+            <div class="image-container">
+                <img src="./Lahore-01.jpg" style="height: 180px; width: 260px;" onclick="openfullImg('./Lahore-01.jpg', 'Lahore')">
+                <div class="overlay-text">Lahore</div>
+                <a href="https://en.wikipedia.org/wiki/Lahore" target="_blank" class="visit-button">Visit</a>
+            </div>
+            <div class="image-container">
+                <img src="./Mumbai-07.jpg" style="height: 180px; width: 260px;" onclick="openfullImg('./Mumbai-07.jpg', 'Mumbai')">
+                <div class="overlay-text">Mumbai</div>
+                <a href="https://en.wikipedia.org/wiki/Mumbai" target="_blank" class="visit-button">Visit</a>
+            </div>
+            <div class="image-container">
+                <img src="./jaipur-Rajistan-06" style="height: 180px; width: 260px;" onclick="openfullImg('./jaipur-Rajistan-06', 'Jaipur')">
+                <div class="overlay-text">Jaipur</div>
+                <a href="https://en.wikipedia.org/wiki/Jaipur" target="_blank" class="visit-button">Visit</a>
+            </div>
+            <div class="image-container">
+                <img src="./Qutub-Minar-08 (1).jpeg" style="height: 180px; width: 260px;" onclick="openfullImg('./Qutub-Minar-08 (1).jpeg', 'Qutub Minar')">
+                <div class="overlay-text">Qutub Minar</div>
+                <a href="https://en.wikipedia.org/wiki/Qutub_Minar" target="_blank" class="visit-button">Visit</a>
+            </div>
+            <div class="image-container">
+                <img src="./TajMahal-08 (1).webp" style="height: 180px; width: 260px;" onclick="openfullImg('./TajMahal-08 (1).webp', 'Taj Mahal')">
+                <div class="overlay-text">Taj Mahal</div>
+                <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank" class="visit-button">Visit</a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <script>
+       
+    function openfullImg(src, heading) {
+    document.getElementById('fullImg').src = src;
+    document.getElementById('imageHeading').innerText = heading;
+    document.getElementById('fullImgBox').style.display = 'flex';
+}
+
+     function closefullImg() {
+    document.getElementById('fullImgBox').style.display = 'none';
+}
+
+
+
+    </script>
+
+    
+    
+</body>
+</html>
